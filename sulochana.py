@@ -1,17 +1,19 @@
-# Area of circle using oops
-import math
-class circle:
-    def_init_(self,r):
-        self.r=r
+class emp:
+    def __init__(self,name,age,sal):
+     self.name=name
+     self.age=age
+     self.sal=sal
+class empchild(emp):
+    def __init__(self,name,age,sal,idno):
+        self.name=name
+        self.age=age
+        self.sal=sal
+        self.idno=idno
 
-        def calarea(self):
-            return math.pi * self.r**2
-        def cirper(self):
-            return 2*math.pi * self.r
-
-        #driver code
-        r= float(input("Input the radius of the circle: "))
-        a = circle(r)
-
-        area = a.cirper()
-        print("perimeter of the circle:",area)
+#driver code
+e=emp("iot",23,3000)
+print("emp name=",e.name)
+e1=empchild('iot-AB',23,3000,22)
+print(e1.name)
+    
+    
