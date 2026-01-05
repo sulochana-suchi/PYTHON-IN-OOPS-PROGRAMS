@@ -1,0 +1,5 @@
+n=int(input())
+arr=list(map(int,input().split()))
+maxdigit=max(arr)
+itemID=arr.index(maxdigit)
+print(itemID)
