@@ -1,0 +1,5 @@
+m = int(input())
+k1 = int(input())
+k2 = int(input())
+res = (((m*k2 % 5)**k1)%7000000001)
+print(res)
